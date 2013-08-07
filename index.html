@@ -99,13 +99,19 @@
 	.footer a {
 	   color: #ccccff;
 	}
+
+	/* centering the coinbase button */
+	div.coinbase_button {
+	   margin: 0 auto;
+	}
+
 	/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
 	div.addthis_toolbox {
 	   width:180px;
  	   margin: 0 auto;
 	}
       </style>
-	</style>
+	<!--/style-->
     <!-- Google Analytics -->
     <script type="text/javascript">
 
@@ -211,7 +217,17 @@
 	 <div class="span6 offset3 order">
 	   <!-- Standard Bootstrap button.  -->
  	   <!-- http://twitter/github.io/bootstrap/base-css.html#buttons -->
-	   <button class="btn btn-success btn-large">Preorder</button>
+	   <!--button class="btn btn-success btn-large">Preorder</button-->
+
+	   <!-- Coinbase Button start1-->
+	   <div class="coinbase_button">
+	   <a class="coinbase-button" data-button-style="custom_large" data-button-text="Preorder with Bitcoin"
+	      data-code="4e974e8f534f6212ba01b0549b638f17" href="https://coinbase.com/checkouts/4e974e8f534f6212ba01b0549b638f17">
+	     Preorder with Bitcoin</a>
+	   <script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+	   </div>
+	   <!-- Cointbase button end-->
+
 	 </div>
 	 </div>
 	  <div class="row-fluid">
@@ -220,6 +236,7 @@
 	   <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
 	   <!--button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button-->
 	   <!--button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button-->
+
 	   <!-- AddThis Button BEGIN -->
 	   <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 	     <a class="addthis_button_preferred_1"></a>
@@ -232,6 +249,7 @@
 	   <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 	   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fc195e3a31a6fe"></script>
 	   <!-- AddThis Button END -->
+
 	   </div>
 	 </div>
 	</div>
